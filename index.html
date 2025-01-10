@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      
+</head>
+<body>
+      <form method="POST" id="form">
+            <h1>Create an Account</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <input type="hidden" name="access_key" value="6bf81fcb-a6f8-4434-8bdf-b8dc45080e44">
+            <label for="name">Enter Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Name">
+            <label for="email">Enter Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Email">
+            <label for="textarea">Enter Message</label>
+            <textarea name="message" id="textarea" name="textarea" placeholder="Enter Message"></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <button type="submit">Submit Form</button>
+        
+            <div id="result"></div>
+        
+        </form>
+        
+        <script src="script.js"></script>
+</body>
+</html>
